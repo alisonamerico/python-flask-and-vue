@@ -14,7 +14,13 @@ def index():
 # creating a route to page about
 @app.route('/about')
 def about():
-    return 'Hi my name is Alison!'
+    return render_template('about.html')
+
+
+# creating a route to page about
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 
 if __name__ == "__main__":
