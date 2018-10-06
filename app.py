@@ -8,7 +8,7 @@ app = Flask(__name__)
 # creating a route to main page and displaying the message 'Hello World'
 @app.route('/')
 def index():
-    return render_template('templates/index.html')
+    return render_template('index.html')
 
 
 # creating a route to page about
@@ -18,4 +18,4 @@ def about():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
